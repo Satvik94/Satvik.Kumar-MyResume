@@ -234,6 +234,10 @@ h1 {
 
 /* ----- Mobile Responsive ----- */
 @media screen and (max-width: 400px) {
+  header {
+    height: 50vh;
+  }
+
   header ul {
     font-size: 1rem;
     flex-wrap: wrap;
@@ -245,6 +249,7 @@ h1 {
 
   nav a {
     margin: 15px;
+    display: inline-block;
   }
 
   .section-heading {
@@ -262,7 +267,7 @@ h1 {
     width: 13rem;
     height: 15rem;
     border-radius: 50%;
-    margin-top: -20vh;
+    margin-top: -15vh;
   }
 
   #about-me p {
@@ -280,25 +285,31 @@ h1 {
 
   #experiences {
     width: 85%;
+    padding-top: 0;
   }
 
   .job {
-    width: 45%;
-    margin: 0px;
+    width: 80%;
+    /* margin: 0 auto; */
   }
 
   .job:nth-child(even) {
-    left: 60%;
+    left: 0;
   }
 
   .job > span {
     font-size: 1.1rem;
     text-align: left;
+    margin-top: 50px;
   }
 
   .job p {
     font-size: 13px;
     text-align: left;
+  }
+
+  #timeline {
+    left: 100%;
   }
 
   #timeline-travel {
